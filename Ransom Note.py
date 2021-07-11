@@ -11,9 +11,10 @@ def main():
 
     for i in ransom:
         if i in mag:
-            ransom = ransom.replace(i,'',1)
+            ransom = ransom.replace(i,'', 1)
+            mag = mag.replace(i,'', 1)
         else:
-            return False
+            mag = mag.replace(i,'', 1)
 
     if (ransom == ""):
         print("True")
