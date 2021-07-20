@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+'''
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+'''
+
 def main():
     word = input("Enter word : ")
     word2 = input("Enter Anagram : ")
