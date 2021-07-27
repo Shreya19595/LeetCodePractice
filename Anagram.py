@@ -5,7 +5,7 @@ Given two strings s and t, return true if t is an anagram of s, and false otherw
 '''
 
 def main():
-    word = input("Enter word : ")     # word 1
+    word = input("Enter word : ")    
     word2 = input("Enter Anagram : ")
     s = list(word2)
     for i in word:
