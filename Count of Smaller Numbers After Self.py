@@ -24,4 +24,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+           
+# Faster solution using bisect
+
+class Solution:
+    def countSmaller(self, nums: List[int]) -> List[int]:
+        
+        nums = nums[::-1]
+        out = []
+        sorted = []
+        
+        for num in nums:
+            c = bisect.bisect_left(sorted, num)
+            out.append(c)
+            bisect.insort(sorted, num)
             
+        return out[::-1]
