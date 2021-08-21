@@ -32,3 +32,6 @@ def main():
     
     result = binary_search(nums, 0, len(nums)-1, target)
     print(result)
+    
+if __name__ == "__main__":
+    main()
