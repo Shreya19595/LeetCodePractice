@@ -25,3 +25,6 @@ def main():
     output = twopointers(nums, len(nums))
     
     print(output)
+    
+if __name__ == "__main__":
+    main()
