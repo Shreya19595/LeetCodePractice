@@ -6,25 +6,24 @@ Given an integer array nums sorted in non-decreasing order, return an array of t
 
 def main():
     nums = list(map(int,input("Enter array: ").strip().split()))
-    output = 0
-    def twopointers(arr, n):
-        i = 0
-        j = n - 1
-        while (i <= j):
-            if (i < j):
-                arr[i] = arr[i] ** 2
-                arr[j] = arr[j] ** 2
-                i += 1
-                j -= 1
-            else:                       # for i = j when size of array is odd.
-                arr[i] = arr[i] ** 2
-                break          
-        arr.sort()
-        return arr
-    
-    output = twopointers(nums, len(nums))
-    
-    print(output)
+    i = 0
+    n = len(nums)
+    j = n - 1
+        
+    new = [0] * n
+    k = n - 1
+        
+    while i <= j:
+        if abs(nums[i]) < abs(nums[j]):
+            new[k] = nums[j] ** 2
+            j -= 1
+                
+        else:
+            new[k] = nums[i] ** 2
+            i += 1
+        k -= 1
+            
+    print(new)
     
 if __name__ == "__main__":
     main()
