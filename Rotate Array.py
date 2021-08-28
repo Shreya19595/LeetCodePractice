@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 '''
-Given an array, rotate the array to the right by k steps, where k is non-negative.
+Given an array, rotate the array to the right by k steps, where k is non-negative integer.
 '''
 
 def main():
