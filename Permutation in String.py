@@ -6,6 +6,7 @@ In other words, return true if one of s1's permutations is the substring of s2.
 '''
 
 import string
+from collections import Counter
 
 def main():
     s1 = input("Enter the first sentence: ")
