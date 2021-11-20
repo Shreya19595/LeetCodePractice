@@ -5,14 +5,14 @@ Given an array of integers temperatures represents the daily temperatures, retur
 '''
 
 def main():
-    temperatures = list(map(int, input("Enter numbers: ").split().strip()))
+    temperature = list(map(int, input("Enter numbers: ").split().strip()))
     stack = []
-    n = len(temperatures)
+    n = len(temperature)
     res = [0] * n
     
     for i in range(n):
-        t = temperatures[i]
-        while stack != [] and temperatures[stack[-1]] < t:
+        t = temperature[i]
+        while stack != [] and temperature[stack[-1]] < t:
             less = stack.pop()
             res[less] = i - less
         stack.append(i)
