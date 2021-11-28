@@ -8,7 +8,6 @@ A zero-based permutation nums is an array of distinct integers from 0 to nums.le
 def main():
     nums = list(map(int, input("Enter array: ").strip().split()))
     ans = []
-    a = 0
     
     for i in range(len(nums)):
         ans.append(nums[nums[i]])
